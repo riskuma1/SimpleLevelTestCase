@@ -42,6 +42,9 @@ private WebDriver driver;
 	@FindBy(xpath="[//h2[contains(text(),'Order Information')]")
 	public WebElement orderInfo;
 	
+	@FindBy(xpath="//div[@class='header_middel']//child::a[1]")
+	public WebElement uniformStore;
+	
 	public void order_History() {
 		this.orderHistorylink.click();
 		
@@ -49,6 +52,11 @@ private WebDriver driver;
 	}	
 	public void viewDetails() {
 		this.viewButton.click();
+		
+	}
+	
+	public void uniformStoreLink(){
+		this.uniformStore.click();
 		
 	}
 }

@@ -32,6 +32,9 @@ public class LoginUFSPOM {
 		@FindBy(xpath="//div[@class='form-group']//a[contains(text(),'Forgotten Password')]")
 		private WebElement forgotPassword;
 		
+		@FindBy(xpath="//div[@class='alert alert-danger']")
+		public WebElement invalidLoginAlert;
+		
 		
 		 	
 		

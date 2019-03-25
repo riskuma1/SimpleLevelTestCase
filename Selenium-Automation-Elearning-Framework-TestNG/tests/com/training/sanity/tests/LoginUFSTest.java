@@ -61,7 +61,9 @@ public class LoginUFSTest {
 		loginufsPOM.loginEmailID("neha1@gmail.com");
 		loginufsPOM.loginpwd("Neha123");  
 		loginufsPOM.loginClick();
-		Assert.assertEquals("ACCOUNT",myAccountPOM.accoundHeading.getText(),"Login is not succesfull");
+		myAccountPOM.uniformStoreLink();
+		
+		
 		
 	}
 }
